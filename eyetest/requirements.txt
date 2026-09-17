@@ -1,0 +1,12 @@
+# eye test app — the interpreter with these on this machine is
+#   /usr/local/bin/python3   (Homebrew's python3 has none of them)
+streamlit>=1.40
+plotly>=5.15,<6            # 6+ binary-encodes arrays; streamlit cannot read selections
+streamlit-image-coordinates>=0.1.9   # click-to-select on the city map
+numpy
+pandas
+pillow
+scikit-learn
+torch
+torchvision
+osmnx>=2.0                 # only needed by embed_grid.py, not the app
